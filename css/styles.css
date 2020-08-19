@@ -1,0 +1,56 @@
+body {
+  font-family: Roboto;
+  color: #212121;
+}
+
+main {
+  background: white;
+}
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.nav-list {
+  background: ffffff;
+}
+
+.web-logotext {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+
+.studio-logotext {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.title {
+  background: #2f303a;
+  color: ffffff; /*ТУТ ПРОВЕРИТЬ, НЕ ПОЛУЧАЕТСЯ НАСТРОИТЬ ЦВЕТ ЗАГОЛОВКА*/
+}
+
+.features-whatdo-common p {
+  color: #757575;
+}
+
+.team-container {
+  background: #f5f4fa;
+}
+.team-container h3 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.team-container p {
+  color: #757575;
+}

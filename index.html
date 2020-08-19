@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,9 +14,9 @@
 
     <header>
 
-        <nav>
-            <a href="/">
-                <span lang="en">WebStudio</span>
+        <nav class="nav-list">
+
+            <a href="/" lang="en"> <span class="web-logotext">Web</span> <span class="studio-logotext">Studio</span>
             </a>
 
             <ul>
@@ -22,7 +24,7 @@
                     <a href="/"> <span>Студия</span> </a>
                 </li>
                 <li>
-                    <a href="./page.html"> <span>Портфолио</span> </a>
+                    <a href="./portfolio.html"> <span>Портфолио</span> </a>
                 </li>
                 <li>
                     <a href="/"> <span>Контакты</span> </a>
@@ -43,13 +45,13 @@
     <main>
         <!-- Шапка сайта -->
 
-        <section>
+        <section class="title">
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button type="button"> <span>Заказать услугу</span> </button>
         </section>
 
         <!-- Контейнер объединяющий "Особенности" и "Чем мы занимаемся" -->
-        <div>
+        <div class="features-whatdo-common">
             <!-- ОСОБЕННОСТИ -->
             <section>
                 <ul>
@@ -103,14 +105,14 @@
 
         <!-- НАША КОМАНДА -->
 
-        <section>
+        <section class="team-container">
             <h2>Наша команда</h2>
             <ul>
                 <li>
                     <figure>
                         <img src="./images/team-card-1-ID.jpg" alt="Игорь Демьяненко" width="400">
                         <figcaption>
-                            <h3>Игорь Демьяненко</h3>
+                            <h3> <b>Игорь Демьяненко</b> </h3>
                             <p lang="en">Product Designer</p>
                         </figcaption>
                     </figure>

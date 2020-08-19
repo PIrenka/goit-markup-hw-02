@@ -1,32 +1,61 @@
+/* Основной цвет текста: #212121
+Вторичный цвет текста: #757575
+Акценторный цвет текста: #2196F3
+Цвета для логотипа: #2196F3 и #000000
+Цвет Заголовка и в футере: #ffffff
+Цвет текста имейла и тел в футере: rgba(255, 255, 255, 0.6)
+
+Цвет фона: #ffffff
+Цвет фона для Заголовка и Футера: #2F303A
+Цвет фона для Наша Команда: #F5F4FA
+
+Размер шрифта: 
+Основной шрифт: Roboto normal and bold
+Шрифт Логотипа: Raleway bold
+ */
+:root {
+  --title-color: #ffffff;
+  --minititles-color: #212121;
+  --inside-color: #757575;
+  --active-color: #2196f3;
+}
+
 body {
   font-family: Roboto;
   color: #212121;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
 }
 
-main {
-  background: white;
-}
 a {
+  /* стили к ссылкам */
   text-decoration: none;
+  color: var(--inside-color);
+}
+a:hover,
+a:focus {
+  color: var(--active-color);
+}
+a:active {
+  color: var(--active-color);
 }
 
-ul > li {
+li {
+  /* стили к пунктам списков */
   list-style-type: none;
 }
 
-.nav-list {
-  background: ffffff;
-}
-
 .web-logotext {
+  /* стили для части Web в логотипе */
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   color: #2196f3;
 }
-
 .studio-logotext {
+  /* стили для части Studio в логотипе */
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -35,9 +64,19 @@ ul > li {
 }
 
 .title {
+  /*  стили для заголовка */
   background: #2f303a;
-  color: ffffff; /*ТУТ ПРОВЕРИТЬ, НЕ ПОЛУЧАЕТСЯ НАСТРОИТЬ ЦВЕТ ЗАГОЛОВКА*/
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
 }
+
+/* ПРОПИСАТЬ СТИЛИ ДЛЯ КНОПКИ */
+
+/* всё что ниже пересмотреть и подправить!!!! */
 
 .features-whatdo-common p {
   color: #757575;
@@ -53,4 +92,22 @@ ul > li {
 
 .team-container p {
   color: #757575;
+}
+
+address {
+  /* стили для почтового адреса в футере */
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* .tel-in-footer {
+  /* стили для номера телефона в футере */
+/* color: rgba(255, 255, 255, 0.6);
+} можно и по другому (внизу второй вариант)*/
+
+.footer tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer {
+  background-color: #2f303a;
 }

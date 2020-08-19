@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=fallback" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=fallback" rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +16,9 @@
 
     <header>
 
-        <nav class="nav-list">
+        <nav>
 
-            <a href="/" lang="en"> <span class="web-logotext">Web</span> <span class="studio-logotext">Studio</span>
+            <a href="/" lang="en"> <span class="web-logotext">Web</span><span class="studio-logotext">Studio</span>
             </a>
 
             <ul>
@@ -46,7 +48,7 @@
         <!-- Шапка сайта -->
 
         <section class="title">
-            <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button type="button"> <span>Заказать услугу</span> </button>
         </section>
 
@@ -151,11 +153,10 @@
     </main>
 
     <!-- Подвал -->
-    <footer>
+    <footer class="footer">
         <ul>
             <li>
-                <a href="/">
-                    <span>WebStudio</span>
+                <a href="/" lang="en"> <span class="web-logotext">Web</span><span class="studio-logotext">Studio</span>
                 </a>
             </li>
             <li>
@@ -164,7 +165,7 @@
                 </address>
             </li>
             <li> <a href="mailto:info@example.com">info@example.com</a> </li>
-            <li> <a href="tel:+380991111111">+38 099 111 11 11</a> </li>
+            <li> <a href="tel:+380991111111" class="tel-in-footer">+38 099 111 11 11</a> </li>
         </ul>
     </footer>
 </body>

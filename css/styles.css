@@ -21,23 +21,47 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #212121;
   background-color: #ffffff;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.web-logotext {
+  /* стили для части Web в логотипе */
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+}
+.studio-logotext {
+  /* стили для части Studio в логотипе */
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.site-nav a {
+  color: var(--minititles-color);
 }
 
 a {
   /* стили к ссылкам */
   text-decoration: none;
   color: var(--inside-color);
+  cursor: pointer;
 }
 a:hover,
-a:focus {
+a:focus,
+a:active {
   color: var(--active-color);
 }
-a:active {
+.site-nav a.current {
   color: var(--active-color);
 }
 
@@ -46,68 +70,119 @@ li {
   list-style-type: none;
 }
 
-.web-logotext {
-  /* стили для части Web в логотипе */
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #2196f3;
-}
-.studio-logotext {
-  /* стили для части Studio в логотипе */
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #000000;
+.mail-tel-nav {
+  letter-spacing: 0.02em;
 }
 
 .title {
   /*  стили для заголовка */
   background: #2f303a;
   color: #ffffff;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  /* стили для кнопки Заказать Услуги */
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--active-color);
+  letter-spacing: 0.06em;
+}
+
+/* решить что делать с объявлением шрифтов */
+.features-whatdo-common h3 {
+  /* стили для Чем Занимаемся */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.features-whatdo-common p {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.features-whatdo-common h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
   text-align: center;
 }
 
-/* ПРОПИСАТЬ СТИЛИ ДЛЯ КНОПКИ */
-
-/* всё что ниже пересмотреть и подправить!!!! */
-
-.features-whatdo-common p {
-  color: #757575;
-}
-
 .team-container {
+  /* стили для Наша Команда */
   background: #f5f4fa;
 }
-.team-container h3 {
-  font-size: 16px;
-  line-height: 19px;
+.team-container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
-
+.team-container h3 {
+  font-size: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
 .team-container p {
   color: #757575;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 
+.footer {
+  /* стили для подвала сайта */
+  background-color: #2f303a;
+  line-height: 1.7;
+}
 address {
   /* стили для почтового адреса в футере */
   font-style: normal;
   color: #ffffff;
 }
-
-/* .tel-in-footer {
+.tel-in-footer {
   /* стили для номера телефона в футере */
-/* color: rgba(255, 255, 255, 0.6);
-} можно и по другому (внизу второй вариант)*/
-
-.footer tel {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer {
-  background-color: #2f303a;
+
+.portfolio-button {
+  /* стили для ряда кнопок в Портфолио */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #f5f4fa;
+  border: none;
+  cursor: pointer;
+}
+.portfolio-button button:hover,
+button:focus,
+button:active {
+  background-color: var(--active-color);
+}
+
+.projects h3 {
+  /* стили для Проектов */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--inside-color);
+}
+
+footer .studio-logotext {
+  /* стили для части Studio в логотипе в Футере сайта */
+  color: var(--title-color);
 }

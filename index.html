@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=fallback" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=fallback" rel="stylesheet">
 </head>
 
 <body>
@@ -21,9 +22,9 @@
             <a href="/" lang="en"> <span class="web-logotext">Web</span><span class="studio-logotext">Studio</span>
             </a>
 
-            <ul>
+            <ul class="site-nav">
                 <li>
-                    <a href="/"> <span>Студия</span> </a>
+                    <a href="/" class="current"> <span>Студия</span> </a>
                 </li>
                 <li>
                     <a href="./portfolio.html"> <span>Портфолио</span> </a>
@@ -36,7 +37,7 @@
                 </li>
             </ul>
 
-            <ul>
+            <ul class="mail-tel-nav">
                 <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
                 <li> <a href="tel:+380991111111">+38 096 111 11 11</a> </li>
             </ul>
@@ -49,7 +50,7 @@
 
         <section class="title">
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button"> <span>Заказать услугу</span> </button>
+            <button type="button" class="button"> <span>Заказать услугу</span> </button>
         </section>
 
         <!-- Контейнер объединяющий "Особенности" и "Чем мы занимаемся" -->
@@ -69,7 +70,7 @@
                         <!-- ОСОБЕННОСТИ Feature 2 -->
                         <h3>ПУНКТУАЛЬНОСТЬ</h3>
                         <p>
-                            Задача организации, в особенности же<br />рамки и место обучения кадров<br />влечет за
+                            Задача организации, в особенности<br />же рамки и место обучения кадров<br />влечет за
                             собой.
                         </p>
                     </li>
@@ -111,41 +112,26 @@
             <h2>Наша команда</h2>
             <ul>
                 <li>
-                    <figure>
-                        <img src="./images/team-card-1-ID.jpg" alt="Игорь Демьяненко" width="400">
-                        <figcaption>
-                            <h3> <b>Игорь Демьяненко</b> </h3>
-                            <p lang="en">Product Designer</p>
-                        </figcaption>
-                    </figure>
+                    <img src="./images/team-card-1-ID.jpg" alt="Игорь Демьяненко" width="400">
+                    <h3> Игорь Демьяненко </h3>
+                    <p lang="en">Product Designer</p>
+                </li>
+                <li>
+                    <img src="./images/team-card-2-OR.jpg" alt="Ольга Репина" width="400">
+                    <h3>Ольга Репина</h3>
+                    <p lang="en">Frontend Developer</p>
+                </li>
+                <li>
+                    <img src="./images/team-card-3-NT.jpg" alt="Николай Тарасов" width="400">
+                    <h3>Николай Тарасов</h3>
+                    <p lang="en">Marketing</p>
+                </li>
+                <li>
 
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/team-card-2-OR.jpg" alt="Ольга Репина" width="400">
-                        <figcaption>
-                            <h3>Ольга Репина</h3>
-                            <p lang="en">Frontend Developer</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/team-card-3-NT.jpg" alt="Николай Тарасов" width="400">
-                        <figcaption>
-                            <h3>Николай Тарасов</h3>
-                            <p lang="en">Marketing</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/team-card-4-ME.jpg" alt="Михаил Ермаков" width="400">
-                        <figcaption>
-                            <h3>Михаил Ермаков</h3>
-                            <p lang="en">UI Designer</p>
-                        </figcaption>
-                    </figure>
+                    <img src="./images/team-card-4-ME.jpg" alt="Михаил Ермаков" width="400">
+
+                    <h3>Михаил Ермаков</h3>
+                    <p lang="en">UI Designer</p>
                 </li>
             </ul>
         </section>

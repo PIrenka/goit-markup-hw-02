@@ -15,15 +15,19 @@
  */
 :root {
   --title-color: #ffffff;
+  --title-background-color: #2f303a;
   --minititles-color: #212121;
   --inside-color: #757575;
   --active-color: #2196f3;
+  --logo-studio-color: #000000;
+  --team-container-background: #f5f4fa;
+  --tel-in-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--minititles-color);
+  background-color: var(--title-color);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -35,7 +39,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #2196f3;
+  color: var(--active-color);
 }
 .studio-logotext {
   /* стили для части Studio в логотипе */
@@ -43,7 +47,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #000000;
+  color: var(--logo-studio-color);
 }
 
 .site-nav a {
@@ -76,8 +80,8 @@ li {
 
 .title {
   /*  стили для заголовка */
-  background: #2f303a;
-  color: #ffffff;
+  background: var(--title-background-color);
+  color: var(--title-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -95,7 +99,6 @@ li {
   letter-spacing: 0.06em;
 }
 
-/* решить что делать с объявлением шрифтов */
 .features-whatdo-common h3 {
   /* стили для Чем Занимаемся */
   font-weight: 700;
@@ -104,7 +107,7 @@ li {
   text-transform: uppercase;
 }
 .features-whatdo-common p {
-  color: #757575;
+  color: var(--inside-color);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -117,7 +120,7 @@ li {
 
 .team-container {
   /* стили для Наша Команда */
-  background: #f5f4fa;
+  background: var(--team-container-background);
 }
 .team-container h2 {
   font-weight: 700;
@@ -132,7 +135,7 @@ li {
   text-align: center;
 }
 .team-container p {
-  color: #757575;
+  color: var(--inside-color);
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -140,17 +143,17 @@ li {
 
 .footer {
   /* стили для подвала сайта */
-  background-color: #2f303a;
+  background-color: var(--title-background-color);
   line-height: 1.7;
 }
 address {
   /* стили для почтового адреса в футере */
   font-style: normal;
-  color: #ffffff;
+  color: var(--title-color);
 }
 .tel-in-footer {
   /* стили для номера телефона в футере */
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--tel-in-footer-color);
 }
 
 .portfolio-button {
@@ -159,13 +162,13 @@ address {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  background-color: #f5f4fa;
+  background-color: var(--team-container-background);
   border: none;
   cursor: pointer;
 }
-.portfolio-button button:hover,
-button:focus,
-button:active {
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-button:active {
   background-color: var(--active-color);
 }
 
